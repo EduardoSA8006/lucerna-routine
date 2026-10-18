@@ -23,8 +23,16 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 - rotinas recorrentes;
 - histórico e estatísticas.
 
+## Armazenamento
+
+Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
+
+As tarefas, os hábitos e o histórico ficam num banco SQLite interno, em `~/.local/share/lucerna/routine/`. Os dados da rotina são mais estruturados que as notas, então um banco serve melhor que arquivos soltos.
+
+## Futuro
+
+- A sincronização entre aparelhos.
+
 ## Em aberto
 
 - O que é "rotina" para o usuário: tarefas, hábitos, agenda, lembretes ou uma mistura.
-- O armazenamento.
-- A sincronização.
