@@ -2,7 +2,7 @@
 
 O `lucerna-routine` é um gerenciador de rotina em Rust. Funciona sozinho, com uma TUI, e ganha um painel no Lucerna.
 
-Segue a estrutura de apps do [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, TUI, provedor e painel em QML.
+Segue a estrutura de apps do [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, serviço, TUI e painel em QML.
 
 ## Painel e TUI
 
@@ -15,7 +15,7 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 - os hábitos do dia, com anel de progresso;
 - o botão "iniciar foco", um timer pomodoro que aparece na barra.
 
-**Lembretes:** pelas notificações do shell.
+**Lembretes:** pelas notificações do shell. Funcionam pelo timer do systemd do usuário, sem o serviço ficar rodando: o serviço registra o timer para o próximo horário, o timer o sobe, ele avisa e volta a sair. O desenho está em "Serviço sob demanda" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
 
 **Só na TUI:**
 
