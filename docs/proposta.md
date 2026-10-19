@@ -2,7 +2,7 @@
 
 O `lucerna-routine` é um gerenciador de rotina em Rust. Funciona sozinho, com uma TUI, e ganha um painel no Lucerna.
 
-Segue a estrutura de apps do [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, serviço, TUI e painel em QML.
+Segue a estrutura de apps do [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, serviço, TUI e painel em QML.
 
 ## O que é rotina
 
@@ -49,7 +49,7 @@ Serve para estudos e programação:
 - tem dois modos: pomodoro (25 min de foco e 5 de pausa, ajustáveis) ou cronômetro livre;
 - fica ligado a uma tarefa ou etiqueta, para o histórico mostrar quanto tempo foi para cada coisa;
 - o timer aparece na barra do shell enquanto roda, e há um aviso no fim de cada etapa;
-- durante o foco, o app liga sozinho o "não perturbe" do shell e desliga na pausa e no fim (pedido pelo SDK, como em "O que o SDK oferece" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md));
+- durante o foco, o app liga sozinho o "não perturbe" do shell e desliga na pausa e no fim (pedido pelo SDK, como em "O que o SDK oferece" no [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md));
 - as estatísticas (por dia e por etiqueta) ficam na TUI, e o painel mostra só o total de hoje.
 
 ## Painel e TUI
@@ -64,7 +64,7 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 - os hábitos do dia, com anel de progresso;
 - o botão "iniciar foco", com o total de foco de hoje.
 
-**Lembretes:** pelas notificações do shell. Funcionam pelo timer do systemd do usuário, sem o serviço ficar rodando: o serviço registra o timer para o próximo horário, o timer o sobe, ele avisa e volta a sair. O desenho está em "Serviço sob demanda" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
+**Lembretes:** pelas notificações do shell. Funcionam pelo timer do systemd do usuário, sem o serviço ficar rodando: o serviço registra o timer para o próximo horário, o timer o sobe, ele avisa e volta a sair. O desenho está em "Serviço sob demanda" no [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md).
 
 **Na TUI:**
 
@@ -75,7 +75,7 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 
 ## Armazenamento
 
-Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
+Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md).
 
 As tarefas, os hábitos, os blocos do dia e o histórico do foco ficam num banco SQLite interno, em `~/.local/share/lucerna/routine/`. Os dados da rotina são mais estruturados que as notas, então um banco serve melhor que arquivos soltos.
 
